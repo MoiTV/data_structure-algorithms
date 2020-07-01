@@ -1,9 +1,13 @@
-function truncateString(str, num) {
-    if (str.length > num) {
-        return str.slice(0, num) + '...';
+function booWho(bool) {
+    if (typeof bool !== 'boolean') {
+        return false;
     } else {
-        return str;
+        if (x) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
 
-console.log(truncateString('A-tisket a-tasket A green and yellow basket', 8));
+console.log(booWho([1, 2, 3]));
