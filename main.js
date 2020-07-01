@@ -1,13 +1,11 @@
-function booWho(bool) {
-    if (typeof bool !== 'boolean') {
-        return false;
-    } else {
-        if (x) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+function titleCase(str) {
+    let words = str.toLowerCase().split(' ');
+
+    let singleWord = words.map(
+        upper => upper.charAt(0).toUpperCase() + upper.slice(1)
+    );
+
+    return singleWord.join(' ');
 }
 
-console.log(booWho([1, 2, 3]));
+console.log(titleCase('sHoRt AnD sToUt'));
