@@ -1,11 +1,11 @@
-function titleCase(str) {
-    let words = str.toLowerCase().split(' ');
+function bouncer(arr) {
+    let arr2 = [];
 
-    let singleWord = words.map(
-        upper => upper.charAt(0).toUpperCase() + upper.slice(1)
-    );
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i]) arr2.push(arr[i]);
+    }
 
-    return singleWord.join(' ');
+    return arr2;
 }
 
-console.log(titleCase('sHoRt AnD sToUt'));
+bouncer([7, 'ate', '', false, 9]);
