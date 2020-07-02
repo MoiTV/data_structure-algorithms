@@ -1,11 +1,11 @@
-function bouncer(arr) {
-    let arr2 = [];
+function getIndexToIns(arr, num) {
+    arr.sort();
 
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i]) arr2.push(arr[i]);
+        if (arr[i] >= num) return i;
     }
 
-    return arr2;
+    return arr.length;
 }
 
-bouncer([7, 'ate', '', false, 9]);
+console.log(getIndexToIns([40, 60, 20, 30], 50));
