@@ -1,11 +1,13 @@
-function getIndexToIns(arr, num) {
-    arr.sort();
+function mutation(arr) {
+    const test = arr[1].toLowerCase();
+    const target = arr[0].toLowerCase();
 
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] >= num) return i;
+    for (let i = 0; i < test.length; i++) {
+        console.log(target.indexOf(test[i]));
+        if (target.indexOf(test[i]) < 0) return false;
     }
 
-    return arr.length;
+    return true;
 }
 
-console.log(getIndexToIns([40, 60, 20, 30], 50));
+mutation(['Hello', 'hey']);
