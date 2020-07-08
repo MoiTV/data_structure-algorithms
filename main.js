@@ -1,11 +1,7 @@
-// The global variable
-var globalTitle = 'Winter Is Coming';
+function thisEnviroment() {
+    const array = [1, 2, 3, 4];
 
-// Only change code below this line
-function urlSlug(title) {
-    return title.toLowerCase();
+    console.log(this);
 }
-// Only change code above this line
-const newGlobalTitle = urlSlug(globalTitle);
 
-console.log(newGlobalTitle);
+thisEnviroment();
